@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SatyaSetu - Unmasking Digital Deception with AI</title>
+    <meta name="description" content="SatyaSetu is an AI-powered platform for detecting and preventing digital deception, including deepfakes, fake news, and phishing attempts.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <svg viewBox="0 0 100 100">
+                <circle class="outer-circle" cx="50" cy="50" r="45"></circle>
+                <circle class="shield-circle" cx="50" cy="50" r="35"></circle>
+                <path class="shield" d="M50,20 L70,30 L70,50 C70,65 60,75 50,80 C40,75 30,65 30,50 L30,30 L50,20"></path>
+                <path class="lock" d="M45,45 L55,45 L55,60 L45,60 Z M42,45 L42,40 C42,35 45,30 50,30 C55,30 58,35 58,40 L58,45"></path>
+            </svg>
+            <div class="scanning-line"></div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="#">
+                    <div class="logo-icon">
+                        <svg width="30" height="30" viewBox="0 0 100 100">
+                            <path class="shield" d="M50,20 L70,30 L70,50 C70,65 60,75 50,80 C40,75 30,65 30,50 L30,30 L50,20"></path>
+                            <path class="lock" d="M45,45 L55,45 L55,60 L45,60 Z M42,45 L42,40 C42,35 45,30 50,30 C55,30 58,35 58,40 L58,45"></path>
+                        </svg>
+                    </div>
+                    SatyaSetu
+                </a>
+            </div>
+
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#features" class="nav-link">What SatyaSetu Does</a></li>
+                    <li><a href="#tech-stack" class="nav-link">Tech Stack</a></li>
+                    <li><a href="#applications" class="nav-link">Real-World Applications</a></li>
+                    <li><a href="#demo" class="nav-link">Demo</a></li>
+                    <li><a href="#privacy" class="nav-link">Privacy</a></li>
+                </ul>
+
+                <div class="theme-toggle">
+                    <input type="checkbox" class="theme-switch" id="theme-switch" checked>
+                    <label for="theme-switch" class="toggle-label">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                        <div class="toggle-ball"></div>
+                    </label>
+                </div>
+
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero section">
+        <div class="cybersecurity-grid"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="glitch-text"><span class="gradient-text">SatyaSetu:</span> Your</h1>
+                <h2 class="hero-tagline">Shield Against<br>Digital Deception</h2>
+                <p class="hero-description">
+                    A cutting-edge platform built for hackathons to detect and prevent digital deception, 
+                    including fake news, phishing attacks, and deepfakes. Protecting truth in the digital age with
+                    advanced AI technology.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#demo" class="btn btn-primary">Try the Demo</a>
+                    <a href="#how-it-works" class="btn btn-secondary">How It Works</a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="shield-animation">
+                    <div class="shield-outer">
+                        <div class="scanning-effect"></div>
+                        <div class="shield-inner">
+                            <div class="shield-icon">
+                                <svg viewBox="0 0 100 100">
+                                    <path d="M50,20 L70,30 L70,50 C70,65 60,75 50,80 C40,75 30,65 30,50 L30,30 L50,20"></path>
+                                    <path d="M45,45 L55,45 L55,60 L45,60 Z M42,45 L42,40 C42,35 45,30 50,30 C55,30 58,35 58,40 L58,45"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="orbiting-particles">
+                        <div class="particle p1"></div>
+                        <div class="particle p2"></div>
+                        <div class="particle p3"></div>
+                        <div class="particle p4"></div>
+                        <div class="particle p5"></div>
+                    </div>
+
+                    <div class="data-circles">
+                        <div class="data-circle dc1">
+                            <i class="fas fa-image"></i>
+                            <span>Image</span>
+                        </div>
+                        <div class="data-circle dc2">
+                            <i class="fas fa-video"></i>
+                            <span>Video</span>
+                        </div>
+                        <div class="data-circle dc3">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Text</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About SatyaSetu</h2>
+                <p class="section-subtitle">Empowering people to navigate the digital world with confidence and clarity through advanced deception detection technologies.</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <p>In today's digital landscape, distinguishing between authentic and deceptive content has become increasingly challenging. <span class="highlight">SatyaSetu</span> was created to address this critical need, providing individuals and organizations with powerful tools to identify manipulated media, AI-generated content, and other forms of digital deception.</p>
+
+                    <p>Our name "SatyaSetu" combines "Satya" (truth) and "Setu" (bridge), embodying our mission to build bridges to truth in the digital realm. Using cutting-edge artificial intelligence and machine learning technologies, we analyze patterns, inconsistencies, and contextual factors that may indicate deceptive content.</p>
+
+                    <p>Whether it's detecting deepfakes, analyzing text for AI generation markers, or identifying manipulated images, SatyaSetu provides comprehensive protection against a wide range of digital deception techniques.</p>
+
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <div class="stat-text">
+                                <h3>95%</h3>
+                                <p>Text Analysis Accuracy</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-image"></i>
+                            </div>
+                            <div class="stat-text">
+                                <h3>92%</h3>
+                                <p>Image Detection Accuracy</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-video"></i>
+                            </div>
+                            <div class="stat-text">
+                                <h3>90%</h3>
+                                <p>Deepfake Detection Rate</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-visual">
+                    <div class="futuristic-cube">
+                        <div class="cube-face front"></div>
+                        <div class="cube-face back"></div>
+                        <div class="cube-face left"></div>
+                        <div class="cube-face right"></div>
+                        <div class="cube-face top"></div>
+                        <div class="cube-face bottom"></div>
+                    </div>
+                    <div class="digital-particles"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Key Features</h2>
+                <p class="section-subtitle">Comprehensive detection capabilities across multiple content types with advanced AI analysis.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card" data-feature="text">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Text Analysis</h3>
+                    <p>Identify AI-generated content, misinformation, and manipulated text using pattern recognition and linguistic analysis.</p>
+                    <a href="#demo" class="btn btn-small btn-secondary">Try Demo</a>
+
+                    <div class="feature-hover">
+                        <div class="feature-detail">
+                            <h3>Advanced Text Analysis</h3>
+                            <ul>
+                                <li>AI content detection with 95% accuracy</li>
+                                <li>Sentiment and bias identification</li>
+                                <li>Source credibility assessment</li>
+                                <li>Contextual inconsistency detection</li>
+                            </ul>
+                            <a href="#demo" class="btn btn-small btn-primary">Try the Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-card" data-feature="image">
+                    <div class="feature-icon">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <h3>Image Verification</h3>
+                    <p>Detect manipulated images, AI-generated visuals, and identify inconsistencies in lighting, shadows, and perspective.</p>
+                    <a href="#demo" class="btn btn-small btn-secondary">Try Demo</a>
+
+                    <div class="feature-hover">
+                        <div class="feature-detail">
+                            <h3>Image Authentication</h3>
+                            <ul>
+                                <li>Manipulation detection (clone stamp, splicing)</li>
+                                <li>AI-generated image identification</li>
+                                <li>Metadata analysis and verification</li>
+                                <li>Visual inconsistency highlighting</li>
+                            </ul>
+                            <a href="#demo" class="btn btn-small btn-primary">Try the Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-card" data-feature="video">
+                    <div class="feature-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Video Detection</h3>
+                    <p>Analyze videos for signs of manipulation, splicing, or other alterations using frame-by-frame analysis and pattern detection.</p>
+                    <a href="#demo" class="btn btn-small btn-secondary">Try Demo</a>
+
+                    <div class="feature-hover">
+                        <div class="feature-detail">
+                            <h3>Video Integrity Analysis</h3>
+                            <ul>
+                                <li>Frame manipulation detection</li>
+                                <li>Audio/video sync verification</li>
+                                <li>Temporal consistency checking</li>
+                                <li>Compression artifact analysis</li>
+                            </ul>
+                            <a href="#demo" class="btn btn-small btn-primary">Try the Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-card" data-feature="phishing">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Phishing Protection</h3>
+                    <p>Identify fraudulent websites, emails, and messages designed to steal sensitive information or credentials.</p>
+                    <a href="#demo" class="btn btn-small btn-secondary">Try Demo</a>
+
+                    <div class="feature-hover">
+                        <div class="feature-detail">
+                            <h3>Anti-Phishing Suite</h3>
+                            <ul>
+                                <li>URL and domain verification</li>
+                                <li>Content similarity comparison</li>
+                                <li>Visual brand impersonation detection</li>
+                                <li>Social engineering pattern recognition</li>
+                            </ul>
+                            <a href="#demo" class="btn btn-small btn-primary">Try the Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-card" data-feature="deepfake">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-secret"></i>
+                    </div>
+                    <h3>Deepfake Detection</h3>
+                    <p>Identify synthetically generated or altered faces and voices using advanced neural network analysis and behavioral patterns.</p>
+                    <a href="#demo" class="btn btn-small btn-secondary">Try Demo</a>
+
+                    <div class="feature-hover">
+                        <div class="feature-detail">
+                            <h3>Deepfake Analysis System</h3>
+                            <ul>
+                                <li>Facial inconsistency detection</li>
+                                <li>Blinking pattern analysis</li>
+                                <li>Voice synthesis identification</li>
+                                <li>Micro-expression verification</li>
+                            </ul>
+                            <a href="#demo" class="btn btn-small btn-primary">Try the Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-card" data-feature="realtime">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Real-time Monitoring</h3>
+                    <p>Continuous analysis of content streams to identify and flag potentially deceptive materials as they appear online.</p>
+                    <a href="#demo" class="btn btn-small btn-secondary">Try Demo</a>
+
+                    <div class="feature-hover">
+                        <div class="feature-detail">
+                            <h3>Continuous Protection</h3>
+                            <ul>
+                                <li>API integration for content streams</li>
+                                <li>Custom alert systems and thresholds</li>
+                                <li>Trend analysis and reporting</li>
+                                <li>Cross-platform monitoring capabilities</li>
+                            </ul>
+                            <a href="#demo" class="btn btn-small btn-primary">Try the Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="demo section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Try SatyaSetu</h2>
+                <p class="section-subtitle">Experience our technology in action with these interactive demonstrations.</p>
+            </div>
+
+            <div class="demo-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="text-demo">Text Analysis</button>
+                    <button class="tab-btn" data-tab="image-demo">Image Verification</button>
+                    <button class="tab-btn" data-tab="video-demo">Video Detection</button>
+                    <button class="tab-btn" data-tab="deepfake-demo">Deepfake Detection</button>
+                </div>
+
+                <div class="tab-content">
+                    <!-- Text Demo Tab -->
+                    <div id="text-demo" class="tab-pane active">
+                        <div class="demo-interface">
+                            <div class="demo-header">
+                                <h3>AI-Generated Text Detector</h3>
+                                <p>Enter a text sample (minimum 50 characters) to analyze for signs of AI generation.</p>
+                            </div>
+
+                            <div class="input-container">
+                                <textarea rows="6" placeholder="Paste your text here to analyze for AI-generated content..."></textarea>
+                            </div>
+
+                            <button class="btn btn-primary demo-btn">Analyze Text</button>
+
+                            <div class="result-container">
+                                <div class="result-header">Analysis Results</div>
+
+                                <div class="result-progress">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill"></div>
+                                    </div>
+                                    <div class="progress-label">Waiting for input...</div>
+                                </div>
+
+                                <div class="result-metrics">
+                                    <div class="metric">
+                                        <div class="metric-label">Human Probability</div>
+                                        <div class="metric-value">-</div>
+                                    </div>
+                                    <div class="metric">
+                                        <div class="metric-label">AI Probability</div>
+                                        <div class="metric-value">-</div>
+                                    </div>
+                                    <div class="metric">
+                                        <div class="metric-label">Confidence</div>
+                                        <div class="metric-value">-</div>
+                                    </div>
+                                </div>
+
+                                <div class="result-explanation">
+                                    Analysis results will appear here after processing.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Image Demo Tab -->
+                    <div id="image-demo" class="tab-pane">
+                        <div class="demo-interface">
+                            <div class="demo-header">
+                                <h3>Image Manipulation Detector</h3>
+                                <p>Upload an image to analyze for signs of manipulation or AI generation.</p>
+                            </div>
+
+                            <div class="image-upload-area">
+                                <input type="file" accept="image/*" style="display: none;">
+                                <div class="upload-icon">
+                                    <i class="fas fa-cloud-upload-alt"></i>
+                                </div>
+                                <p>Drag & drop your image here or click to browse</p>
+                                <div class="upload-btn">Select File</div>
+                            </div>
+
+                            <button class="btn btn-primary demo-btn" disabled>Verify Image</button>
+
+                            <div class="image-result-area">
+                                <p class="placeholder-text">Analysis results will appear here after processing.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video Demo Tab -->
+                    <div id="video-demo" class="tab-pane">
+                        <div class="demo-interface">
+                            <div class="demo-header">
+                                <h3>Video Authentication Tool</h3>
+                                <p>Upload a video to analyze for signs of manipulation or splicing.</p>
+                            </div>
+
+                            <div class="video-upload-area">
+                                <input type="file" accept="video/*" style="display: none;">
+                                <div class="upload-icon">
+                                    <i class="fas fa-film"></i>
+                                </div>
+                                <p>Drag & drop your video here or click to browse</p>
+                                <div class="upload-btn">Select File</div>
+                            </div>
+
+                            <button class="btn btn-primary demo-btn" disabled>Analyze Video</button>
+
+                            <div class="video-result-area">
+                                <p class="placeholder-text">Analysis results will appear here after processing.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Deepfake Demo Tab -->
+                    <div id="deepfake-demo" class="tab-pane">
+                        <div class="demo-interface">
+                            <div class="demo-header">
+                                <h3>Deepfake Detection Demo</h3>
+                                <p>Explore our deepfake detection technology with sample images.</p>
+                            </div>
+
+                            <div class="sample-gallery">
+                                <div class="gallery-header">Select a sample to analyze:</div>
+                                <div class="gallery-items">
+                                    <div class="gallery-item" data-result="fake">
+                                        <div class="item-thumbnail"></div>
+                                        <div class="item-label">Sample 1</div>
+                                    </div>
+                                    <div class="gallery-item" data-result="real">
+                                        <div class="item-thumbnail"></div>
+                                        <div class="item-label">Sample 2</div>
+                                    </div>
+                                </div>
+                                <p class="sample-disclaimer">Note: These are simulation samples for demonstration purposes only.</p>
+                            </div>
+
+                            <div class="deepfake-result-area">
+                                <p class="placeholder-text">Select a sample above to view analysis results.</p>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="tech-stack" class="tech-stack section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Tech Stack</h2>
+                <p class="section-subtitle">The advanced technologies powering SatyaSetu's deception detection capabilities</p>
+            </div>
+
+            <div class="process-flow">
+                <div class="process-item">
+                    <div class="process-icon">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <div class="process-number">1</div>
+                    </div>
+                    <div class="process-content">
+                        <h3>Content Intake</h3>
+                        <p>The system receives content (text, image, video, or website) for analysis through direct upload, URL submission, or API integration. Multiple formats and input methods are supported for maximum flexibility.</p>
+                    </div>
+                </div>
+
+                <div class="process-item">
+                    <div class="process-icon">
+                        <i class="fas fa-scanner"></i>
+                        <div class="process-number">2</div>
+                    </div>
+                    <div class="process-content">
+                        <h3>Pre-processing</h3>
+                        <p>Content undergoes initial preparation including format standardization, feature extraction, and breaking down complex content into analyzable components. This step ensures optimal analysis performance.</p>
+                    </div>
+                </div>
+
+                <div class="process-item">
+                    <div class="process-icon">
+                        <i class="fas fa-brain"></i>
+                        <div class="process-number">3</div>
+                    </div>
+                    <div class="process-content">
+                        <h3>AI Analysis</h3>
+                        <p>Our multi-layered neural networks process the content using specialized models for each content type. Models are trained on millions of authentic and deceptive examples to identify subtle patterns invisible to the human eye.</p>
+                    </div>
+                </div>
+
+                <div class="process-item">
+                    <div class="process-icon">
+                        <i class="fas fa-chart-line"></i>
+                        <div class="process-number">4</div>
+                    </div>
+                    <div class="process-content">
+                        <h3>Risk Assessment</h3>
+                        <p>Results from multiple detection algorithms are combined to generate a comprehensive authenticity score. Confidence levels are calculated based on the strength of detected patterns and contextual factors.</p>
+                    </div>
+                </div>
+
+                <div class="process-item">
+                    <div class="process-icon">
+                        <i class="fas fa-file-alt"></i>
+                        <div class="process-number">5</div>
+                    </div>
+                    <div class="process-content">
+                        <h3>Report Generation</h3>
+                        <p>A detailed analysis report is created with visualizations highlighting potential areas of concern, statistical confidence levels, and specific techniques likely used in creating deceptive content.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tech-breakdown">
+                <div class="tech-header">
+                    <h3>Our Technology Stack</h3>
+                    <p>SatyaSetu is built using cutting-edge AI technologies and modern web standards</p>
+                </div>
+
+                <div class="tech-cards">
+                    <div class="tech-card">
+                        <div class="tech-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h4>Text Analysis</h4>
+                        <ul>
+                            <li>BERT (Bidirectional Encoder Representations from Transformers)</li>
+                            <li>Natural Language Processing</li>
+                            <li>Sentiment Analysis</li>
+                            <li>Source Credibility Scoring</li>
+                        </ul>
+                    </div>
+
+                    <div class="tech-card">
+                        <div class="tech-icon">
+                            <i class="fas fa-image"></i>
+                        </div>
+                        <h4>Image Verification</h4>
+                        <ul>
+                            <li>EasyOCR for text extraction</li>
+                            <li>Image forensics algorithms</li>
+                            <li>Metadata analysis</li>
+                            <li>Manipulation detection</li>
+                        </ul>
+                    </div>
+
+                    <div class="tech-card">
+                        <div class="tech-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h4>Video/Audio Analysis</h4>
+                        <ul>
+                            <li>Frame-by-frame analysis</li>
+                            <li>Whisper AI for audio transcription</li>
+                            <li>Voice synthesis detection</li>
+                            <li>Temporal consistency checking</li>
+                        </ul>
+                    </div>
+
+                    <div class="tech-card">
+                        <div class="tech-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>Phishing & Deepfake Detection</h4>
+                        <ul>
+                            <li>TotalScan API for phishing detection</li>
+                            <li>GAN-based deepfake detection</li>
+                            <li>Facial inconsistency analysis</li>
+                            <li>URL and domain verification</li>
+                        </ul>
+                    </div>
+                </div>
+
+                
+    </section>
+
+    <!-- Future Plans Section -->
+    <section id="future-vision" class="future-vision section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Future Expansion Plans</h2>
+                <p class="section-subtitle">Our vision is advancing SatyaSetu and expanding its capabilities</p>
+            </div>
+
+            
+                    <div class="future-plans-grid">
+                        <div class="future-plan-card">
+                            <div class="future-plan-icon">
+                                <i class="fas fa-link"></i>
+                            </div>
+                            <div class="future-plan-content">
+                                <h3 class="future-plan-title">Blockchain-Based Content Verification</h3>
+                                <p class="future-plan-description">Implement a blockchain-based verification system that creates immutable records of original content, allowing users to track the source and any modifications to digital assets.</p>
+                            </div>
+                        </div>
+
+                        <div class="future-plan-card">
+                            <div class="future-plan-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="future-plan-content">
+                                <h3 class="future-plan-title">AI-Powered Chatbot</h3>
+                                <p class="future-plan-description">Develop an intelligent chatbot that can answer questions about potential misinformation and guide users through the verification process in a conversational manner.</p>
+                            </div>
+                        </div>
+
+                        <div class="future-plan-card">
+                            <div class="future-plan-icon">
+                                <i class="fas fa-puzzle-piece"></i>
+                            </div>
+                            <div class="future-plan-content">
+                                <h3 class="future-plan-title">Browser Extension</h3>
+                                <p class="future-plan-description">Create a lightweight browser extension that provides real-time verification of content as users browse the web, with visual indicators for potentially deceptive material.</p>
+                            </div>
+                        </div>
+
+                        <div class="future-plan-card">
+                            <div class="future-plan-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="future-plan-content">
+                                <h3 class="future-plan-title">Mobile Application</h3>
+                                <p class="future-plan-description">Build a dedicated mobile app that allows users to scan and verify content on-the-go, with camera integration for quick image and text analysis.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="future-plans-visual">
+                    <div class="future-globe">
+                        <div class="globe-sphere"></div>
+                        <div class="globe-ring"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Real-World Applications Section -->
+    <section id="applications" class="applications section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Real-World Applications</h2>
+                <p class="section-subtitle">How SatyaSetu can be used to combat digital deception in various sectors</p>
+            </div>
+
+            <div class="applications-grid">
+                <div class="application-card">
+                    <div class="application-icon">
+                        <i class="fas fa-landmark"></i>
+                    </div>
+                    <h3>Government & Public Sector</h3>
+                    <div class="application-content">
+                        <ul>
+                            <li>Election integrity protection through misinformation monitoring</li>
+                            <li>Public health communication verification</li>
+                            <li>National security threat assessment</li>
+                            <li>Public document authenticity verification</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="application-card">
+                    <div class="application-icon">
+                        <i class="fas fa-newspaper"></i>
+                    </div>
+                    <h3>Media & Journalism</h3>
+                    <div class="application-content">
+                        <ul>
+                            <li>Fact-checking automation for news organizations</li>
+                            <li>Source material verification</li>
+                            <li>Real-time deepfake detection in video content</li>
+                            <li>Content provenance tracking across platforms</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="application-card">
+                    <div class="application-icon">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <h3>Law Enforcement</h3>
+                    <div class="application-content">
+                        <ul>
+                            <li>Digital evidence validation for investigations</li>
+                            <li>Phishing campaign identification and tracking</li>
+                            <li>Forensic analysis of manipulated media</li>
+                            <li>Verification of online identity claims</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="application-card">
+                    <div class="application-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3>Education</h3>
+                    <div class="application-content">
+                        <ul>
+                            <li>Media literacy education tools</li>
+                            <li>AI-generated content detection for academia</li>
+                            <li>Research source verification</li>
+                            <li>Critical thinking enhancement for students</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy Statement Section -->
+    <section id="privacy" class="privacy section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">User Privacy Statement</h2>
+                <p class="section-subtitle">Our commitment to protecting your data and privacy</p>
+            </div>
+
+            <div class="privacy-content">
+                <div class="privacy-icon">
+                    <i class="fas fa-user-shield"></i>
+                </div>
+                
+                <div class="privacy-text">
+                    <p>At SatyaSetu, we are committed to maintaining the highest standards of privacy and data security. Our platform is designed with privacy-first principles:</p>
+                    
+                    <ul class="privacy-points">
+                        <li><span class="highlight">No Content Storage:</span> Content you upload for analysis is processed in real-time and is not permanently stored on our servers. Once analysis is complete, all uploaded content is automatically and permanently deleted.</li>
+                        
+                        <li><span class="highlight">End-to-End Encryption:</span> All data transmission between your device and our servers is protected with industry-standard encryption, ensuring that your content cannot be intercepted or accessed by unauthorized parties.</li>
+                        
+                        <li><span class="highlight">Minimal Data Collection:</span> We only collect the data necessary to provide our services. No personal identification information is required to use our basic features.</li>
+                        
+                        <li><span class="highlight">Transparent Analysis:</span> Our systems provide clear explanations of how conclusions were reached, allowing you to understand the verification process.</li>
+                    </ul>
+                    
+                    <p>By using SatyaSetu, you can combat digital deception without compromising your privacy or contributing to data collection practices that may be used for tracking or profiling.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="cta-overlay"></div>
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Unmask Digital Deception?</h2>
+                <p>Join us in building a more trustworthy digital future. Start using SatyaSetu today.</p>
+                <div class="cta-buttons">
+                    <a href="#demo" class="btn btn-primary">Try the Demo</a>
+                    <a href="#tech-stack" class="btn btn-secondary">View Tech Stack</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#" class="logo">
+                        <div class="logo-icon">
+                            <svg width="30" height="30" viewBox="0 0 100 100">
+                                <path class="shield" d="M50,20 L70,30 L70,50 C70,65 60,75 50,80 C40,75 30,65 30,50 L30,30 L50,20"></path>
+                                <path class="lock" d="M45,45 L55,45 L55,60 L45,60 Z M42,45 L42,40 C42,35 45,30 50,30 C55,30 58,35 58,40 L58,45"></path>
+                            </svg>
+                        </div>
+                        SatyaSetu
+                    </a>
+                    <p>Empowering digital truth through advanced AI technologies. SatyaSetu is committed to creating a more authentic digital experience for everyone.</p>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">What SatyaSetu Does</a></li>
+                        <li><a href="#tech-stack">Tech Stack</a></li>
+                        <li><a href="#applications">Real-World Applications</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h3>More</h3>
+                    <ul>
+                        <li><a href="#demo">Demo</a></li>
+                        <li><a href="#privacy">Privacy</a></li>
+                        <li><a href="https://github.com" target="_blank">GitHub</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to our newsletter for the latest updates on digital deception detection.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 SatyaSetu. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" id="back-to-top" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
